@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kababjees Fried Chicken</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    nav { background: #b91c1c; color: white; padding: 15px 30px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; }
+    nav a { color: white; margin-left: 20px; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    section { padding: 40px 20px; }
+    .home { background: #fff7ed; text-align: center; position: relative; }
+    .home img { width: 100%; height: auto; border-radius: 10px; }
+    .home h2, .home p { position: absolute; color: white; text-shadow: 1px 1px 2px black; }
+    .home h2 { font-size: 4vw; top: 35%; left: 5%; }
+    .home p { font-size: 1.5vw; top: 45%; left: 5%; }
+    .menu { background: #ffffff; }
+    .menu-items { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .menu-card { border: 1px solid #ddd; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .menu-card img { width: 100%; height: 200px; object-fit: cover; }
+    .menu-card h3 { margin: 15px; font-size: 1.2em; }
+    .menu-card p { margin: 0 15px 15px; color: #555; }
+    .about { background: #b91c1c; color: white; text-align: center; }
+    .contact form { max-width: 500px; margin: 0 auto; display: grid; gap: 15px; }
+    .contact input, .contact textarea { padding: 10px; border: 1px solid #ccc; border-radius: 8px; width: 100%; }
+    .contact button { background: #b91c1c; color: white; padding: 10px; border: none; border-radius: 8px; cursor: pointer; }
+    .contact button:hover { background: #991b1b; }
+    footer { background: #b91c1c; color: white; text-align: center; padding: 15px; }
+
+    @media (max-width: 768px) {
+      nav { flex-direction: column; align-items: flex-start; }
+      .home h2 { font-size: 6vw; top: 25%; left: 10%; }
+      .home p { font-size: 3.5vw; top: 40%; left: 10%; }
+    }
+
+    @media (max-width: 480px) {
+      .home h2 { font-size: 6vw; top: 20%; left: 10%; }
+      .home p { font-size: 2vw; top: 35%; left: 10%; }
+      nav a { display: block; margin: 10px 0; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>Kababjees Fried Chicken</h1>
+    <div>
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section id="home" class="home">
+    <h2>Welcome to Kababjees</h2>
+    <p>Delicious, crispy, and juicy fried chicken <br> with a perfect blend of spices.</p>
+    <img src="/highway pic1.jpg" alt="Fried Chicken" />
+  </section>
+
+  <section id="menu" class="menu">
+    <h2 style="text-align:center">Our Menu</h2>
+    <div class="menu-items">
+      <div class="menu-card">
+        <img src="/3a9c4ab2-71bf-4ffe-b34b-3eec33218027.webp" alt="Zinger Burger">
+        <h3>Zinger Burger</h3>
+        <p>Crispy chicken in soft buns.</p>
+      </div>
+      <div class="menu-card">
+        <img src="/extrah-skentucky-superhot-spicychickenwings.jpg" alt="Spicy Wings">
+        <h3>Spicy Wings</h3>
+        <p>Hot & spicy chicken wings.</p>
+      </div>
+      <div class="menu-card">
+        <img src="/images.jpeg" alt="Chicken Bucket">
+        <h3>Chicken Bucket</h3>
+        <p>Perfect for sharing.</p>
+      </div>
+      <div class="menu-card">
+        <img src="/delicious-french-fries-on-a-white-background-photo.jpg" alt="Fries">
+        <h3>Fries</h3>
+        <p>Golden crispy fries.</p>
+      </div>
+      <div class="menu-card">
+        <img src="/Recipes_2400_Pepperoni_Cup_Crips_Sweet_Spicy_Basil_Pep_Hot_Honey.jpg" alt="Pizza">
+        <h3>Pizza</h3>
+        <p>With special Pizza sauce.</p>
+      </div>
+      <div class="menu-card">
+        <img src="/poznan-poland-oct-28-2021-260nw-2071581119.webp" alt="Cold Drinks">
+        <h3>Cold Drinks</h3>
+        <p>Chilled beverages to refresh.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>Kababjees Fried Chicken serves mouth-watering meals with premium ingredients and a love for food.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 style="text-align:center">Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Kababjees Fried Chicken. All rights reserved.</p>
+  </footer>
+</body>
+</html>
